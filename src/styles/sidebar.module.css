@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400&display=swap');
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    min-height: 100vh !important;
+    height: fit-content;
+    transition: width 0.3s ease;
+    border-right: 1px solid #DBDBDB;
+    background-color: transparent;
+    align-items: baseline;
+  }
+
+
+  
+.sidebar.collapsed {
+    width: 30px;
+  }
+
+.menuDiv{
+  margin: 30px 10px;
+}  
+.menuItem.collapsed {
+  opacity: 0;
+  pointer-events: none;
+}  
+
+.menuItem{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #787486;
+  margin: 5px 0;
+
+}  
+.menuImg{
+  width: 24px;
+  height: auto;
+  margin: 10px;
+}
+.toggleBtn {
+  position: absolute;
+  top: 0;
+  right: -1.5em;
+  width: 1.5em;
+  height: 2em;
+  background-color: #f0f0f0;
+  border: none;
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+}
+  
+
+.rule{
+  width: 85%;
+  margin: 0 auto;
+  border: 1px solid #DBDBDB;
+}
+
+  /* Logo */
+.logoImg{
+    width: 24px;
+    height: auto;
+    margin: 10px;
+  }
+  
+.logoHead{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #0D062D;
+  }
+  
+/* projects */
+
+.projectDiv{
+  margin: 30px 10px;
+}  
+.projectsHead{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.projectsHead h5{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #787486;
+  margin: 0 10px;
+}
+.addImg{
+  width: 16px;
+  height: 16px;
+}
+.dot1{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #7AC555;
+  margin: 10px;
+}
+.dot2{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FFA500;
+  margin: 10px;
+}
+.dot3{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #E4CCFD;
+  margin: 10px;
+}
+.dot4{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #76A5EA;
+  margin: 10px;
+}
+.projectItem{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
+}
+.projectName{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #787486;
+}
+
+
+
+
+  

@@ -1,0 +1,42 @@
+.home{
+  position: absolute;
+  top: 60px;
+  left: 20vw;
+}
+
+.columns {
+    display: flex;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .column.highlighted {
+    background-color: #e8f0fe;
+  }
+  
+  .card {
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    user-select: none;
+  }
+  
+  .deleteButton {
+    margin-left: 5px;
+  }
+  
+  .cardList.highlighted {
+    background-color: lightgray;
+  }
+  
+  .card.dragging {
+    opacity: 0.5;
+  }
+  

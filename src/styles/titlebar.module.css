@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400&display=swap');
+
+
+
+.titlebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    border-bottom: 1px solid #DBDBDB;
+    z-index: -10;
+    height: 60px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.searchbar{
+    margin-left: 25vw;
+}
+
+.profileDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 0 30px ;
+}
+.nameDiv{
+    display: flex;
+    flex-direction: column;
+
+}
+.profilePic{
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    margin-left: 10px;
+}
+input{
+    border-radius: 6px;
+    width: 417px;
+    height: 40px;
+
+    background-color: #F5F5F5;
+}
+
+.titleImages img{
+    margin: 0 10px;
+}
+
+.name{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+
+    color: #0D062D;
+}
+.place{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #787486;
+}
+
+
