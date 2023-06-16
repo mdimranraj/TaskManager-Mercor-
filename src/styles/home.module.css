@@ -1,42 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400&display=swap');
+
 .home{
   position: absolute;
   top: 60px;
   left: 20vw;
+  padding: 30px 20px 10px;
+  width: 80vw;
+}
+.headContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading, .teams{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heading h1{
+  margin: 0 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  color: #0D062D;
+}
+.headImg{
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+.teamsImg{
+  width: 180px;
+  height: 40px;
+  margin: 0 10px;
+}
+.add{
+  margin: 0 10px;
+}
+.teamsText{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #5030E5;
+}
+.columns {
+  display: flex;
 }
 
-.columns {
-    display: flex;
-  }
-  
-  .column {
-    flex: 1;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-  }
-  
-  .column.highlighted {
-    background-color: #e8f0fe;
-  }
-  
-  .card {
-    margin-bottom: 5px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    user-select: none;
-  }
-  
-  .deleteButton {
-    margin-left: 5px;
-  }
-  
-  .cardList.highlighted {
-    background-color: lightgray;
-  }
-  
-  .card.dragging {
-    opacity: 0.5;
-  }
-  
+.column {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.column.highlighted {
+  background-color: #e8f0fe;
+}
+
+.card {
+  margin-bottom: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  user-select: none;
+}
+
+.deleteButton {
+  margin-left: 5px;
+}
+
+.cardList.highlighted {
+  background-color: lightgray;
+}
+
+.card.dragging {
+  opacity: 0.5;
+}

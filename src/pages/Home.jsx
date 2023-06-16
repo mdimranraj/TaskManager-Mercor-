@@ -47,7 +47,19 @@ const Home = () => {
 
   return (
     <div className={styles.home}>
-        <h1>Task Management</h1>
+        <div className={styles.headContainer}>
+            <div className={styles.heading}>
+                <h1>Mobile App</h1>
+                <img className={styles.headImg} src='./arrow-square-up.png'></img>
+                <img className={styles.headImg} src='./link.png'></img>
+            </div>
+            <div className={styles.teams}>
+                <img src='./add-blue.png' className={styles.add}></img>
+                <span className={styles.teamsText}>Invite</span>
+                <img src='./team.png' className={styles.teamsImg}></img>
+            </div>
+        </div>
+        
       <DndProvider backend={HTML5Backend}>
         <div className={styles.columns}>
           {Object.keys(columns).map((columnTitle, index) => (

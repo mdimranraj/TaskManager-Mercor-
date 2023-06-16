@@ -45,8 +45,9 @@ input{
     border-radius: 6px;
     width: 417px;
     height: 40px;
-
     background-color: #F5F5F5;
+    z-index: 2;
+    border: none;
 }
 
 .titleImages img{

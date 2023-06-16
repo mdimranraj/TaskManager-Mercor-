@@ -14,10 +14,11 @@ const Sidebar = () => {
         
         {/* Content for the sidebar */}
         <div className={`${styles.logo}`}>
-        <img className={styles.logoImg} src='./logo.png' /> <span className={`${styles.menuItem} ${styles.logoHead} ${collapsed ? styles.collapsed : ''}`}> Project M.</span>
-        <span className={styles.toggleBtn} onClick={toggleCollapse}>
-            {!collapsed ? '«' : '»'}
-        </span>
+            <img className={styles.logoImg} src='./logo.png' /> 
+            <span className={`${styles.menuItem} ${styles.logoHead} ${collapsed ? styles.collapsed : ''}`}> Project M.</span>
+            <span className={styles.toggleBtn} onClick={toggleCollapse}>
+                {!collapsed ? '«' : '»'}
+            </span>
         </div>
 
         <div className={styles.menuDiv}>

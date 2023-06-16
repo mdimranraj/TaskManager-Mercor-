@@ -18,7 +18,7 @@
 
   
 .sidebar.collapsed {
-    width: 30px;
+    width: 60px;
   }
 
 .menuDiv{
@@ -34,7 +34,6 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
   color: #787486;
   margin: 5px 0;
 
@@ -47,13 +46,12 @@
 .toggleBtn {
   position: absolute;
   top: 0;
-  right: -1.5em;
-  width: 1.5em;
-  height: 2em;
-  background-color: #f0f0f0;
+  right: 0; 
+  font-size: 30px;
   border: none;
-  border-left: 1px solid #ccc;
   cursor: pointer;
+  color:#787486;
+  margin: 10px 0;
 }
   
 
@@ -64,9 +62,14 @@
 }
 
   /* Logo */
+
+.logo{
+  display: flex;
+  margin: 10px 0;
+}  
 .logoImg{
     width: 24px;
-    height: auto;
+    height: 24px;
     margin: 10px;
   }
   
@@ -75,8 +78,6 @@
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
-
   color: #0D062D;
   }
   

@@ -6,7 +6,7 @@ const Titlebar = () => {
   return (
     <div className={styles.titlebar}>
         <div className={styles.searchbar}>
-            <input type="text" placeholder='🔍 Search for anything...'></input>
+            <input type="text" placeholder=' 🔍 Search for anything...'></input>
         </div>
         <div className={styles.titleImages}>
             <img src='./calendar.png' />

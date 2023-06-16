@@ -2,5 +2,9 @@
   margin: 0 auto;
   padding: 20px;
   min-height: 100% !important ;
+  position: absolute;
+  height: fit-content;
+  width: 100%;
+  z-index: -10;
 }
 
