@@ -34,12 +34,14 @@
 import React from 'react'
 import { MoreHorizontal } from 'react-feather'
 import styles from '../styles/card.module.css';
+import Chip from './Chip';
 
 const Card = () => {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.cardHeader}>
-          <div className={styles.label}>High</div>
+          {/* <div className={styles.label}>High</div> */}
+          <Chip text="High" color="rgba(216, 114, 125, 0.1)"/>
           <MoreHorizontal/>
       </div>
       <div className={styles.cardDesc}>

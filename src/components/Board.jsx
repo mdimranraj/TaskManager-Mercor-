@@ -14,7 +14,8 @@ const Board = () => {
             <MoreHorizontal/>
         </div>
         <hr className={styles.boardRule}></hr>
-        <div className={styles.boardCards}>
+        <div className={`${styles.boardCards} custom-scroll`}>
+            <Card/>
             <Card/>
             <Card/>
         </div>
