@@ -59,6 +59,21 @@ const Sidebar = () => {
             <div className={`${styles.projectItem} ${styles.menuItem} ${collapsed ? styles.collapsed : ''}`}>
                 <div className={styles.dot4}></div><span className={styles.projectName}>Wireframes</span>
             </div>
+
+        </div>
+
+        <div className={styles.thoughtsDiv}>
+            <div className={styles.thoughtsInner}>
+                <div className={styles.bulbContainer}>
+                    <img src='./lamp-on.png'></img>
+                </div>
+                <div className={styles.thoughtsText}>
+                    <h5>Thoughts Time</h5>
+                    <p>We don't have any notice for you, till then you can share your thoughts with your peers.</p>
+                    <input type="text" className={styles.message} placeholder='   Write a message'></input>
+                </div>
+            </div>
+            
         </div>
 
 

@@ -3,6 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import Sidebar from './components/Sidebar';
 import Titlebar from './components/Titlebar';
+import Canvas from './pages/Canvas';
 
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
     <div className="app">
       <Sidebar/>
       <Titlebar/>
-      <Home/>
+      <Canvas/>
     </div>
   );
 };

@@ -7,13 +7,21 @@
     top: 0;
     left: 0;
     width: 20vw;
-    min-height: 100vh !important;
+    max-height: 100vh !important;
     height: fit-content;
     transition: width 0.3s ease;
     border-right: 1px solid #DBDBDB;
     background-color: transparent;
     align-items: baseline;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+.sidebar::-webkit-scrollbar{
+  display: none;
+}
 
 
   
@@ -150,6 +158,61 @@
   line-height: 19px;
   color: #787486;
 }
+
+/* thoughts */
+.thoughtsDiv{ 
+  text-align: center;
+  margin: 50px 10px;
+}
+.bulbContainer{
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  background-color: rgba(252, 214, 74, 0.7);
+  filter: blur(17px);
+  margin: -33px auto 20px;
+  }
+.bulbContainer img{
+ 
+}
+.thoughtsInner{
+  background-color: #F5F5F5;
+  border-radius: 16px;
+  width: 18vw;
+  padding: 15px;
+}
+.thoughtsText{
+  width: 15vw;
+}
+.thoughtsText p{
+
+  word-wrap: normal;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #787486;
+
+}
+.thoughtsText h5{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+.thoughtsText input{
+  width: 13vw;
+  background-color: #ffffff;
+}
+
 
 
 
