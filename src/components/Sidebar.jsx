@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import styles from '../styles/sidebar.module.css'; // Import the CSS file for styling
 
+
 const Sidebar = () => {
+
   const [collapsed, setCollapsed] = useState(false);
 
   const toggleCollapse = () => {
@@ -14,7 +16,9 @@ const Sidebar = () => {
         
         {/* Content for the sidebar */}
         <div className={`${styles.logo}`}>
-            <img className={styles.logoImg} src='./logo.png' /> 
+            <div className={styles.logoBtn} onClick={toggleCollapse}>
+                 {!collapsed? <img className={styles.logoImg} src='./logo.png' /> : '»' }
+            </div>
             <span className={`${styles.menuItem} ${styles.logoHead} ${collapsed ? styles.collapsed : ''}`}> Project M.</span>
             <div className={styles.toggleBtn} onClick={toggleCollapse}>
                 {!collapsed ? '«' : '»'}

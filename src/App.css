@@ -26,6 +26,18 @@
   width: 15vw;
   border-right: 1px solid #DBDBDB;
 }
+
+.toggle {
+  /* position: absolute;
+  top: 0;
+  right: 0;  */
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  color:#787486;
+  margin: 0 20px;
+  height: fit-content;
+}
 .title-main{
   display: flex;
   flex-direction: column;
