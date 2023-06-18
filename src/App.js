@@ -11,9 +11,12 @@ const App = () => {
 
   return (
     <div className="app">
-      <Sidebar/>
-      <Titlebar/>
-      <Canvas/>
+        <div className='sidebar-grid'><Sidebar/></div>
+      <div className='title-main'>
+        <div className='titlebar-grid'><Titlebar/></div>
+        <div className='canvas-grid'><Canvas/></div>
+      </div>
+      
     </div>
   );
 };

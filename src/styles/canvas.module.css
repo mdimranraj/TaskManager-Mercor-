@@ -1,11 +1,14 @@
-.home{
-    position: absolute;
+.canvas{
+    /* position: absolute;
     top: 60px;
-    left: 20vw;
-    padding: 30px 20px 10px;
-    width: 80vw;
+    left: 20vw; */
+    padding: 30px 10px 10px;
+    width: 85vw;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    overflow-y: hidden !important;
+    height: 100vh;
+    overflow-y: auto !important;
+
   }

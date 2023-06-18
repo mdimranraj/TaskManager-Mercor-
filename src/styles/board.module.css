@@ -1,29 +1,57 @@
 
 .board{
-    min-width: 290px;
+    /* min-width: 290px; */
+    max-width: 30%;
     max-height: 100%;
     display:flex;
     flex-direction: column;
     margin: 20px;
     background-color: #F5F5F5;
     border-radius: 16px 16px 0px 0px;
+    /* flex-basis: 33.3333% !important; */
 }
 
 .boardTop{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 10px 20px;
 }
 .boardTopTitle{
     flex:1;
     display: flex;
+    
     align-items: center;
     font-weight: bold;
+}
+.title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0D062D;
 }
 
 .boardTopTitle span{
     color: gray;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    margin: 0 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #625F6D;
 }
 
 .boardCards{
+    margin-top:10px;
    height: 100vh; 
    overflow-y: auto;
 }
@@ -34,4 +62,16 @@
     background-color: #800080;
     border: 2px solid #5030E5;
 }
+
+.addCard{
+    width: 24px;
+    height: 24px;
+}
+.dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
 

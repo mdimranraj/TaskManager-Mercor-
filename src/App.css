@@ -12,11 +12,28 @@
 
 .app {
   margin: 0 auto;
-  padding: 20px;
+  /* padding: 20px; */
   min-height: 100% !important ;
-  position: absolute;
   height: fit-content;
   width: 100%;
   z-index: -10;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.sidebar-grid{
+  width: 15vw;
+  border-right: 1px solid #DBDBDB;
+}
+.title-main{
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  
+}
+.titlebar-grid{ 
+  width: 85vw;
+  border-bottom: 1px solid #DBDBDB;
 }
 

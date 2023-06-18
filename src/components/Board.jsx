@@ -1,17 +1,17 @@
 import React from 'react'
 import styles from '../styles/board.module.css';
-import { MoreHorizontal } from 'react-feather';
 import Card from './Card';
 
-const Board = () => {
+const Board = (props) => {
   return (
     <div className={styles.board}>
         <div className={styles.boardTop}>
-            <p className={styles.boardTopTitle}>
-                To Do
+            <div className={styles.boardTopTitle}>
+                <div className={styles.dot} style={{backgroundColor:props.color}}></div>
+                <div className={styles.title}>{props.title} </div>
                 <span>2</span>
-            </p>
-            <MoreHorizontal/>
+            </div>
+            <img className={styles.addCard} src='./add-blue.png'></img>
         </div>
         <hr className={styles.boardRule}></hr>
         <div className={`${styles.boardCards} custom-scroll`}>

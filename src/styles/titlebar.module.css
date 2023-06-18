@@ -3,11 +3,10 @@
 
 
 .titlebar{
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
-    border-bottom: 1px solid #DBDBDB;
+    left: 0; */
+    width: 85vw;
     z-index: -10;
     height: 60px;
 
@@ -20,7 +19,7 @@
 
 }
 .searchbar{
-    margin-left: 25vw;
+    margin-left: 30px;
 }
 
 .profileDiv{

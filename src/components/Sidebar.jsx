@@ -16,9 +16,9 @@ const Sidebar = () => {
         <div className={`${styles.logo}`}>
             <img className={styles.logoImg} src='./logo.png' /> 
             <span className={`${styles.menuItem} ${styles.logoHead} ${collapsed ? styles.collapsed : ''}`}> Project M.</span>
-            <span className={styles.toggleBtn} onClick={toggleCollapse}>
+            <div className={styles.toggleBtn} onClick={toggleCollapse}>
                 {!collapsed ? '«' : '»'}
-            </span>
+            </div>
         </div>
 
         <div className={styles.menuDiv}>
