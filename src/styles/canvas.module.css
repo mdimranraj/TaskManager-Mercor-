@@ -5,10 +5,94 @@
     padding: 30px 10px 10px;
     width: 85vw;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: flex-start;
     height: 100vh;
     overflow-y: auto !important;
 
+  }
+
+  /* heading  */
+  .headContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heading, .teams{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .heading h1{
+    margin: 0 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    color: #0D062D;
+  }
+  .headImg{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+  }
+  .teamsImg{
+    width: 180px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  .add{
+    margin: 0 10px;
+  }
+  .teamsText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #5030E5;
+  }
+
+  .second{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .second{
+    margin: 10px 0;
+  }
+  .secondLeft img{
+    width: 122px;
+    height: 40px;
+    margin: 10px;
+  }
+  .secondRight img{
+    height: 40px;
+    margin: 10px;
+  }
+  .line{
+
+  }
+  .share{
+    width: 97px;
+  }
+  .blueEqual{
+    height: 40px;
+  }
+  .dotMenu{
+    width: 21px !important;
+    height: 21px !important;
+  }
+
+  .boards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* height: 100vh; */
+    /* overflow-y: auto !important; */
   }

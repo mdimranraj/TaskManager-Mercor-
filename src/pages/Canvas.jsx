@@ -74,7 +74,7 @@ const Canvas = () => {
                         fontColor:"#D58D49"
                     }],
                     desc:"apple is great kjskjkfajl",
-                    pic:"./profile3.png"
+                    pic:"./profile4.png"
                   },  
             ]
         },
@@ -93,7 +93,7 @@ const Canvas = () => {
                     fontColor:"#68B266"
                 }],
                 desc:"apple is great kjskjkfajl",
-                pic:"./profile3.png"
+                pic:"./profile4.png"
               }, 
               {
                 id:"c7",
@@ -208,9 +208,36 @@ const Canvas = () => {
 
   return (
     <div className={styles.canvas}>
+        <div className={styles.headContainer}>
+            <div className={styles.heading}>
+                <h1>Mobile App</h1>
+                <img className={styles.headImg} src='./arrow-square-up.png'></img>
+                <img className={styles.headImg} src='./link.png'></img>
+            </div>
+            <div className={styles.teams}>
+                <img src='./add-blue.png' className={styles.add}></img>
+                <span className={styles.teamsText}>Invite</span>
+                <img src='./team.png' className={styles.teamsImg}></img>
+            </div>
+        </div>
+        <div className={styles.second}>
+            <div className={styles.secondLeft}>
+                <img src='./filter.png'/>
+                <img src='./today.png'/>
+            </div>
+            <div className={styles.secondRight}>
+                <img className={styles.share} src='./share.png'/>
+                <img className={styles.line} src='./line.png'/>
+                <img className={styles.blueEqual} src='./blue-equal.png'/>
+                <img className={styles.dotMenu} src='./dotmenu.png'/>
+            </div>
+        </div>
+        <div className={styles.boards}>
         {
             boards.map( item=> <Board key={item.id} title={item.title} color={item.dotcolor} board={item} handleDragEnd={handleDragEnd} handleDragEnter={handleDragEnter}/>)
         }
+        </div>
+        
 
         {/* <Board title="To Do" color="#5030E5"/>
         <Board title="On Progress" color="#FFA500"/>
