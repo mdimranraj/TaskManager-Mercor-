@@ -8,7 +8,6 @@ import Canvas from './pages/Canvas';
 
 const App = () => {
 
-
   return (
     <div className="app">
         <div className='sidebar-grid'><Sidebar/></div>

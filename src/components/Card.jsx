@@ -36,20 +36,26 @@ import { MoreHorizontal } from 'react-feather'
 import styles from '../styles/card.module.css';
 import Chip from './Chip';
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <div className={styles.cardContainer}>
+    <div className={styles.cardContainer} 
+    draggable
+    onDragEnd={()=>props.handleDragEnd(props.card?.id, props.boardId)} 
+    onDragEnter={()=>props.handleDragEnter(props.card?.id, props.boardId)}
+    >
+  
       <div className={styles.cardHeader}>
           {/* <div className={styles.label}>High</div> */}
-          <Chip text="High" color="rgba(216, 114, 125, 0.1)"/>
+          {/* <Chip text="High" color="rgba(216, 114, 125, 0.1)"/> */}
+          {props.card?.label?.map((item,index) => <Chip text={item.text} bcolor={item.backColor} fcolor={item.fontColor} />)}
           <MoreHorizontal/>
       </div>
       <div className={styles.cardDesc}>
-          <h6 className={styles.cardTitle}>BrainStorming</h6>
-          <p className={styles.cardDetails}>Brainstorming brings team mennersbs diverse experience into play.</p>
+          <h6 className={styles.cardTitle}>{props.card?.title}</h6>
+          <p className={styles.cardDetails}>{props.card?.desc}</p>
       </div>
       <div className={styles.cardFooter}>
-        <img className={styles.cardAvatar} src='./profile3.png'></img>
+        <img className={styles.cardAvatar} src={props.card?.pic}></img>
         <div className={styles.footerRight}>
             <img className={styles.footerIcon} src='./message.png'></img>
             <span>comments</span>
